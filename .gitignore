@@ -1,0 +1,35 @@
+# --- secrets (never commit) ---
+.env
+*.env
+.env.*
+**/.env
+# --- python / data ---
+.venv/
+data/chroma/
+__pycache__/
+*.pyc
+# --- node / promptfoo ---
+node_modules/
+redteam/.promptfoo/
+.promptfoo/
+redteam/results_*.json
+*.log
+# --- office temp/lock files ---
+~$*
+.~lock.*
+# --- local demo/evidence (kept out of repo on purpose) ---
+VB_Testing.docx
+*.docx
+# --- fine-tune model artifacts (large binaries; keep code+dataset, not weights) ---
+finetune/adapter/
+finetune/runs/
+*.safetensors
+*.bin
+
+# --- excluded from public repo (kept local only) ---
+docs/BUILD_LOG.md
+docs/SUBMISSION.md
+docs/LINKEDIN.md
+redteam/regression_log.json
+redteam/redteam_v0_tests.yaml
+redteam/promptfooconfig.yaml

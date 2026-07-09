@@ -1,0 +1,9 @@
+anthropic
+langgraph
+langsmith
+fastapi
+uvicorn[standard]
+chromadb
+sentence-transformers
+python-dotenv
+requests
