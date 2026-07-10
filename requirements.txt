@@ -1,0 +1,16 @@
+# Verde Bowl demo — Streamlit Community Cloud
+# Start with just these two to deploy the SHELL (stub mode). Confirm it runs,
+# then uncomment the v1 stack below and set USE_REAL_BACKENDS=True once wired.
+
+streamlit>=1.40
+anthropic>=0.40
+
+# --- uncomment when you wire the real v0/v1 code ---
+# langgraph>=0.2
+# langchain-core>=0.3
+# chromadb>=0.5
+# sentence-transformers>=3.0
+
+# NOTE: do NOT add the fine-tuned model deps (torch + transformers for the 1.5B).
+# The served guardrail is keyword-floor + Haiku classifier, which fits the ~1GB tier.
+# Adding torch will OOM the free Streamlit app.
